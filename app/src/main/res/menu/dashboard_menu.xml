@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@mipmap/ic_dashboard"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/add_item"
+            android:icon="@mipmap/icon_add_item"
+            android:title="Add Item" />
+
+        <item
+            android:id="@+id/activity_log"
+            android:icon="@mipmap/icon_log"
+            android:title="Activity Log" />
+
+
+    </group>
+
+</menu>

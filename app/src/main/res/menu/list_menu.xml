@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/addqty"
+            android:title="ADD Qty" />
+
+        <item
+            android:id="@+id/usedqty"
+            android:title="Decrease Qty" />
+
+        <item
+            android:id="@+id/edit_item"
+            android:title="Edit Item" />
+
+        <item
+            android:id="@+id/delete_item"
+            android:title="Delete Item" />
+    </group>
+
+</menu>

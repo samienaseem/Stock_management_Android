@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_layout"
+        >
+    <include android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"></include>
+
+    </FrameLayout>
+
+
+    <android.support.v4.widget.DrawerLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layout"
+        android:layout_below="@+id/home_layout"
+        android:background="#FFFFFF"
+        tools:openDrawer="start"
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/home_layout_id"
+            >
+        </FrameLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/navigator"
+            app:menu="@menu/dashboard_menu"
+            app:headerLayout="@layout/nav_header"
+            android:layout_gravity="start">
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

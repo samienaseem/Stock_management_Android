@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akki.stock.stock">
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/icon_stock"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddQtyActivity"
+            android:label="Add Quantity"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity
+            android:name=".DecQtyActivity"
+            android:label="Used Quantity"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+        <activity android:name=".UpdateItemActivity"
+            android:label="Update Info"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"></activity>
+    </application>
+
+</manifest>

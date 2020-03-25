@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akki.stock.stock.FragmentAddItem">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Unit"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/edittext_unit"
+            android:layout_below="@+id/edittext_name"
+            android:layout_alignStart="@+id/edittext_name"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Lower Limit"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@+id/edittext_unit"
+            android:layout_alignStart="@+id/edittext_unit"
+            android:layout_marginTop="34dp"
+            android:id="@+id/edittext_ll" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Upper Limit"
+            android:ems="10"
+            android:layout_below="@+id/edittext_ll"
+            android:layout_alignEnd="@+id/edittext_ll"
+            android:layout_marginTop="41dp"
+            android:id="@+id/edittext_ul" />
+
+        <Button
+            android:text="ADD ITEM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/button"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Current Status (Optional)"
+            android:ems="10"
+            android:layout_marginTop="43dp"
+            android:id="@+id/edittext_cs"
+            android:layout_below="@+id/edittext_ul"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Item Name"
+            android:ems="10"
+            android:layout_marginTop="35dp"
+            android:id="@+id/edittext_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</FrameLayout>

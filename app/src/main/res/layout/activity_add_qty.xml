@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_qty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akki.stock.stock.AddQtyActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Quantity"
+        android:ems="10"
+        android:layout_below="@+id/home_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:id="@+id/qtyedittext" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="By Distributor"
+        android:ems="10"
+        android:layout_below="@+id/qtyedittext"
+        android:layout_alignStart="@+id/qtyedittext"
+        android:layout_marginTop="44dp"
+        android:id="@+id/byedittext" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Cost"
+        android:ems="10"
+        android:layout_below="@+id/byedittext"
+        android:layout_alignStart="@+id/byedittext"
+        android:layout_marginTop="51dp"
+        android:id="@+id/costedittext" />
+
+    <Button
+        android:text="DONE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/button"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#0D47A1</color>
+    <color name="blue">#2196F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="splashcolor">#795548</color>
+    <color name="progressgreen">#388E3C</color>
+    <color name="progressyellow">#FFC400</color>
+    <color name="progressred">#F44336</color>
+</resources>

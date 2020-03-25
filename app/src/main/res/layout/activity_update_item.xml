@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akki.stock.stock.FragmentAddItem">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/edittext_unit"
+            android:layout_below="@+id/edittext_name"
+            android:layout_alignStart="@+id/edittext_name"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:text="UPDATE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/button"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:ems="10"
+            android:layout_marginTop="35dp"
+            android:id="@+id/edittext_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_name"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView7" />
+
+        <TextView
+            android:text="Lower Limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_unit"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_marginTop="12dp"
+            android:id="@+id/textView8" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/edittext_ll"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Upper Limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_ll"
+            android:layout_alignStart="@+id/textView8"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView9" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edittext_ul"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Item Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:id="@+id/textView6"
+            android:layout_marginTop="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Current Status (Optional)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittext_ul"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView10" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edittext_cs"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</FrameLayout>

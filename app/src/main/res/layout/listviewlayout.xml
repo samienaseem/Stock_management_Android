@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:background="@drawable/recbound"
+    android:paddingLeft="20dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Percentage %"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/percentage" />
+
+    <TextView
+        android:text="ITEMNAME"
+        android:layout_width="320dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:id="@+id/iname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Available Unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currents"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:paddingRight="20dp"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/percentage"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/icon_dots"
+        android:layout_alignEnd="@+id/iname"
+        android:id="@+id/dotimgid"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
